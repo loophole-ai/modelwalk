@@ -139,7 +139,7 @@
       "context_window": 1048576,
       "default_max_tokens": 384000,
       "can_reason": true,
-      "reasoning_levels": ["none", "high", "xhigh"],
+      "reasoning_levels": ["none", "low", "high", "max"],
       "default_reasoning_effort": "high",
       "supports_attachments": false
     },
@@ -160,14 +160,14 @@
     {
       "id": "accounts/fireworks/models/deepseek-v4-flash-0731",
       "name": "DeepSeek V4 Flash 0731",
-      "cost_per_1m_in": 0.14,
-      "cost_per_1m_out": 0.28,
+      "cost_per_1m_in": 0.22,
+      "cost_per_1m_out": 0.66,
       "cost_per_1m_in_cached": 0,
-      "cost_per_1m_out_cached": 0.028,
+      "cost_per_1m_out_cached": 0.007,
       "context_window": 1048576,
       "default_max_tokens": 384000,
       "can_reason": true,
-      "reasoning_levels": ["none", "low", "high", "xhigh"],
+      "reasoning_levels": ["none", "low", "high", "max"],
       "default_reasoning_effort": "high",
       "supports_attachments": false
     },
