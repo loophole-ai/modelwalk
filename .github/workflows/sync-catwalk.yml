@@ -1,0 +1,60 @@
+name: Sync Catwalk Providers
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # every 6 hours
+  workflow_dispatch:        # manual trigger too
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest catwalk configs
+        run: |
+          CONFIGS=(
+            anthropic openai gemini xai deepseek groq cerebras
+            fireworks nebius huggingface openrouter kimi moonshot
+            aihubmix alibaba-singapore alibaba-united-states
+            atlascloud avian azure baseten bedrock-europe
+            bedrock-united-states chutes copilot cortecs ionet
+            minimax minimax-china neuralwatt opencode-go opencode-zen
+            pioneer qiniucloud scaleway synthetic venice vercel
+            vertexai zai zhipu zhipu-coding missingmodels
+          )
+          
+          BASE="https://raw.githubusercontent.com/charmbracelet/catwalk/main/internal/providers/configs"
+          
+          for name in "${CONFIGS[@]}"; do
+            URL="$BASE/$name.json"
+            DEST="src/providers/configs/$name.json"
+            curl -sf "$URL" -o "$DEST" && echo "updated $name" || echo "skipped $name (not found)"
+          done
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            git diff --name-only
+          fi
+
+      - name: Open PR if changed
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync/catwalk-${{ github.run_number }}
+          title: "chore: sync provider configs from catwalk"
+          body: |
+            Automated sync from [charmbracelet/catwalk](https://github.com/charmbracelet/catwalk).
+            
+            **Changed files:**
+            ${{ steps.changes.outputs.diff }}
+            
+            Review pricing and model changes before merging.
+          commit-message: "chore: sync provider configs from catwalk"
+          labels: automated, providers
