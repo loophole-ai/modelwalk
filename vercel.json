@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/server.js",
+      "src": "api/index.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["dist/**"],
-        "maxLambdaSize": "50mb"
+        "includeFiles": ["dist/**"]
       }
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dist/server.js"
-    }
+    { "src": "/(.*)", "dest": "api/index.js" }
   ]
 }
