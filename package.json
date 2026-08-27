@@ -4,6 +4,9 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "20.x"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -12,6 +15,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "vercel-build": "tsc",
     "dev": "node --watch --loader ts-node/esm src/server.ts",
     "start": "node dist/server.js"
   },
