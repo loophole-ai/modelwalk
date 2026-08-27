@@ -89,7 +89,7 @@
         "high",
         "max"
       ],
-      "default_reasoning_effort": "high",
+      "default_reasoning_effort": "max",
       "supports_attachments": true
     },
     {
@@ -108,6 +108,24 @@
         "high"
       ],
       "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "zai-org/GLM-5.3-Flash",
+      "name": "GLM 5.3 Flash",
+      "cost_per_1m_in": 0.15,
+      "cost_per_1m_out": 0.5,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0.03,
+      "context_window": 1048576,
+      "default_max_tokens": 131072,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "high",
+        "max"
+      ],
+      "default_reasoning_effort": "max",
       "supports_attachments": true
     },
     {
