@@ -1,0 +1,131 @@
+{
+  "name": "Mistral AI",
+  "id": "mistral",
+  "type": "openai",
+  "api_key": "$MISTRAL_API_KEY",
+  "api_endpoint": "https://api.mistral.ai/v1",
+  "default_large_model_id": "mistral-medium-2508",
+  "default_small_model_id": "mistral-small-2506",
+  "models": [
+    {
+      "id": "mistral-medium-2508",
+      "name": "Mistral Medium 3.1",
+      "cost_per_1m_in": 0.40,
+      "cost_per_1m_out": 2.00,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": true
+    },
+    {
+      "id": "magistral-medium-2509",
+      "name": "Magistral Medium 1.2",
+      "cost_per_1m_in": 2.00,
+      "cost_per_1m_out": 5.00,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "mistral-large-2411",
+      "name": "Mistral Large 2.1",
+      "cost_per_1m_in": 2.00,
+      "cost_per_1m_out": 6.00,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "codestral-2501",
+      "name": "Codestral 2501",
+      "cost_per_1m_in": 0.20,
+      "cost_per_1m_out": 0.60,
+      "context_window": 256000,
+      "default_max_tokens": 32000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "devstral-medium-2507",
+      "name": "Devstral Medium",
+      "cost_per_1m_in": 0.40,
+      "cost_per_1m_out": 2.00,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "devstral-small-2507",
+      "name": "Devstral Small",
+      "cost_per_1m_in": 0.10,
+      "cost_per_1m_out": 0.30,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "mistral-small-2506",
+      "name": "Mistral Small 3.2",
+      "cost_per_1m_in": 0.10,
+      "cost_per_1m_out": 0.30,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "magistral-small-2506",
+      "name": "Magistral Small",
+      "cost_per_1m_in": 0.50,
+      "cost_per_1m_out": 1.50,
+      "context_window": 40000,
+      "default_max_tokens": 8000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "pixtral-large-2411",
+      "name": "Pixtral Large",
+      "cost_per_1m_in": 2.00,
+      "cost_per_1m_out": 6.00,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": true
+    },
+    {
+      "id": "ministral-8b-2410",
+      "name": "Ministral 8B",
+      "cost_per_1m_in": 0.10,
+      "cost_per_1m_out": 0.10,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "ministral-3b-2410",
+      "name": "Ministral 3B",
+      "cost_per_1m_in": 0.04,
+      "cost_per_1m_out": 0.04,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "open-mistral-nemo",
+      "name": "Mistral Nemo 12B",
+      "cost_per_1m_in": 0.15,
+      "cost_per_1m_out": 0.15,
+      "context_window": 128000,
+      "default_max_tokens": 16000,
+      "can_reason": false,
+      "supports_attachments": false
+    }
+  ]
+}
