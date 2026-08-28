@@ -25,6 +25,7 @@ import ionet from './configs/ionet.json' with { type: 'json' }
 import kimi from './configs/kimi.json' with { type: 'json' }
 import minimax from './configs/minimax.json' with { type: 'json' }
 import minimaxChina from './configs/minimax-china.json' with { type: 'json' }
+import mistral from './configs/mistral.json' with { type: 'json' }
 import moonshot from './configs/moonshot.json' with { type: 'json' }
 import nebius from './configs/nebius.json' with { type: 'json' }
 import neuralwatt from './configs/neuralwatt.json' with { type: 'json' }
@@ -71,6 +72,7 @@ export const providers: Provider[] = [
   minimax,
   minimaxChina,
   moonshot,
+  mistral,
   nebius,
   neuralwatt,
   openai,
