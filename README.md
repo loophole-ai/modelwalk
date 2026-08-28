@@ -6,7 +6,7 @@ Serves a `GET /v2/providers` endpoint with all AI provider and model configs as 
 
 ## Providers
 
-41 providers including Anthropic, OpenAI, Gemini, xAI, DeepSeek, Groq, OpenRouter, Azure, Bedrock, VertexAI, Mistral, and more.
+43 providers including Anthropic, OpenAI, Gemini, xAI, DeepSeek, Groq, OpenRouter, Azure, Bedrock, VertexAI, Mistral, Hyper, Inception Labs and more.
 
 ## Usage
 
