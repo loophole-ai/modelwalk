@@ -56,5 +56,7 @@ jobs:
             ${{ steps.changes.outputs.diff }}
             
             Review pricing and model changes before merging.
+            
+            CC: @GarvAgnihotri
           commit-message: "chore: sync provider configs from catwalk"
           labels: automated, providers
