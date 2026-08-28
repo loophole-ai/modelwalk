@@ -19,6 +19,8 @@ import fireworks from './configs/fireworks.json' with { type: 'json' }
 import gemini from './configs/gemini.json' with { type: 'json' }
 import groq from './configs/groq.json' with { type: 'json' }
 import huggingface from './configs/huggingface.json' with { type: 'json' }
+import hyper from './configs/hyper.json' with { type: 'json' }
+import inception from './configs/inception.json' with { type: 'json' }
 import ionet from './configs/ionet.json' with { type: 'json' }
 import kimi from './configs/kimi.json' with { type: 'json' }
 import minimax from './configs/minimax.json' with { type: 'json' }
@@ -62,6 +64,8 @@ export const providers: Provider[] = [
   gemini,
   groq,
   huggingface,
+  hyper,
+  inception,
   ionet,
   kimi,
   minimax,
