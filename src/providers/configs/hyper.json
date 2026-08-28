@@ -1,0 +1,184 @@
+{
+  "name": "Charm Hyper",
+  "id": "hyper",
+  "type": "openai",
+  "api_key": "$HYPER_API_KEY",
+  "api_endpoint": "https://hyper.charm.land/v1",
+  "default_large_model_id": "deepseek-v4-flash",
+  "default_small_model_id": "gemma-4-26b-a4b-it",
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "cost_per_1m_in": 0.20,
+      "cost_per_1m_out": 0.40,
+      "cost_per_1m_in_cached": 0.04,
+      "context_window": 1000000,
+      "default_max_tokens": 384000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "deepseek-v4-pro-0813",
+      "name": "DeepSeek V4 Pro",
+      "cost_per_1m_in": 1.44,
+      "cost_per_1m_out": 4.31,
+      "context_window": 1000000,
+      "default_max_tokens": 262000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "qwen3.7-plus",
+      "name": "Qwen3.7 Plus",
+      "cost_per_1m_in": 1.20,
+      "cost_per_1m_out": 4.80,
+      "cost_per_1m_in_cached": 0.24,
+      "context_window": 1000000,
+      "default_max_tokens": 64000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "qwen3.7-max",
+      "name": "Qwen3.7 Max",
+      "cost_per_1m_in": 2.50,
+      "cost_per_1m_out": 7.50,
+      "context_window": 1000000,
+      "default_max_tokens": 64000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "qwen3.6-max",
+      "name": "Qwen3.6 Max Preview",
+      "cost_per_1m_in": 2.00,
+      "cost_per_1m_out": 12.00,
+      "context_window": 256000,
+      "default_max_tokens": 64000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "qwen3.8-max",
+      "name": "Qwen3.8 Max Preview",
+      "cost_per_1m_in": 2.00,
+      "cost_per_1m_out": 6.00,
+      "cost_per_1m_in_cached": 0.25,
+      "context_window": 1000000,
+      "default_max_tokens": 66000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "qwen3.8-flash",
+      "name": "Qwen3.8 Flash",
+      "cost_per_1m_in": 0.16,
+      "cost_per_1m_out": 0.47,
+      "context_window": 1000000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "qwen3.8-27b",
+      "name": "Qwen3.8 27B",
+      "cost_per_1m_in": 0.50,
+      "cost_per_1m_out": 3.00,
+      "context_window": 1000000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "qwen3.8-2.4t-a95b",
+      "name": "Qwen3.8 2.4T A95B",
+      "cost_per_1m_in": 2.00,
+      "cost_per_1m_out": 6.00,
+      "context_window": 1000000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "kimi-k2-6",
+      "name": "Kimi K2.6",
+      "cost_per_1m_in": 1.03,
+      "cost_per_1m_out": 4.36,
+      "context_window": 262000,
+      "default_max_tokens": 26000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "kimi-k2-5",
+      "name": "Kimi K2.5",
+      "cost_per_1m_in": 0.54,
+      "cost_per_1m_out": 2.76,
+      "context_window": 262000,
+      "default_max_tokens": 26000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "glm-5-2",
+      "name": "GLM-5.2",
+      "cost_per_1m_in": 1.52,
+      "cost_per_1m_out": 4.79,
+      "context_window": 1000000,
+      "default_max_tokens": 33000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "glm-5-1",
+      "name": "GLM-5.1",
+      "cost_per_1m_in": 1.29,
+      "cost_per_1m_out": 4.22,
+      "context_window": 203000,
+      "default_max_tokens": 3000,
+      "can_reason": true,
+      "supports_attachments": true
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM-5",
+      "cost_per_1m_in": 0.92,
+      "cost_per_1m_out": 2.98,
+      "context_window": 203000,
+      "default_max_tokens": 20000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "llama-4-maverick-17b-128e-instruct-fp8",
+      "name": "Llama 4 Maverick 17B",
+      "cost_per_1m_in": 0.27,
+      "cost_per_1m_out": 0.90,
+      "context_window": 430000,
+      "default_max_tokens": 43000,
+      "can_reason": false,
+      "supports_attachments": false
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "name": "Gemma 4 26B",
+      "cost_per_1m_in": 0.12,
+      "cost_per_1m_out": 0.42,
+      "context_window": 256000,
+      "default_max_tokens": 26000,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "minimax-m2-7",
+      "name": "MiniMax M2.7",
+      "cost_per_1m_in": 0.42,
+      "cost_per_1m_out": 1.61,
+      "context_window": 262000,
+      "default_max_tokens": 7000,
+      "can_reason": true,
+      "supports_attachments": false
+    }
+  ]
+}
