@@ -17,12 +17,6 @@
       "context_window": 128000,
       "default_max_tokens": 32768,
       "can_reason": true,
-      "reasoning_levels": [
-        "low",
-        "medium",
-        "high"
-      ],
-      "default_reasoning_effort": "medium",
       "supports_attachments": false
     },
     {
@@ -35,12 +29,30 @@
       "context_window": 128000,
       "default_max_tokens": 32768,
       "can_reason": true,
-      "reasoning_levels": [
-        "low",
-        "medium",
-        "high"
-      ],
-      "default_reasoning_effort": "medium",
+      "supports_attachments": false
+    },
+    {
+      "id": "aion-labs-aion-3-5",
+      "name": "Aion 3.5",
+      "cost_per_1m_in": 3.75,
+      "cost_per_1m_out": 7.5,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 262144,
+      "default_max_tokens": 32768,
+      "can_reason": true,
+      "supports_attachments": false
+    },
+    {
+      "id": "aion-labs-aion-3-5-mini",
+      "name": "Aion 3.5 Mini",
+      "cost_per_1m_in": 0.875,
+      "cost_per_1m_out": 1.75,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 262144,
+      "default_max_tokens": 32768,
+      "can_reason": true,
       "supports_attachments": false
     },
     {
@@ -200,6 +212,42 @@
       "supports_attachments": true
     },
     {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "cost_per_1m_in": 4.8,
+      "cost_per_1m_out": 24,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1000000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "claude-opus-5-5-fast",
+      "name": "Claude Opus 5.5 Fast",
+      "cost_per_1m_in": 9.6,
+      "cost_per_1m_out": 48,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1000000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
       "id": "claude-sonnet-4-5",
       "name": "Claude Sonnet 4.5",
       "cost_per_1m_in": 3.75,
@@ -238,6 +286,24 @@
       "cost_per_1m_out_cached": 0,
       "context_window": 1000000,
       "default_max_tokens": 64000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "cost_per_1m_in": 3.75,
+      "cost_per_1m_out": 18.75,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1000000,
+      "default_max_tokens": 128000,
       "can_reason": true,
       "reasoning_levels": [
         "low",
@@ -814,8 +880,8 @@
     {
       "id": "openai-gpt-56-sol",
       "name": "GPT-5.6 Sol",
-      "cost_per_1m_in": 2.5,
-      "cost_per_1m_out": 12.5,
+      "cost_per_1m_in": 5,
+      "cost_per_1m_out": 25,
       "cost_per_1m_in_cached": 0,
       "cost_per_1m_out_cached": 0,
       "context_window": 1000000,
@@ -832,8 +898,8 @@
     {
       "id": "openai-gpt-56-sol-pro",
       "name": "GPT-5.6 Sol Pro",
-      "cost_per_1m_in": 2.5,
-      "cost_per_1m_out": 12.5,
+      "cost_per_1m_in": 5,
+      "cost_per_1m_out": 25,
       "cost_per_1m_in_cached": 0,
       "cost_per_1m_out_cached": 0,
       "context_window": 1000000,
@@ -906,6 +972,60 @@
       "name": "GPT-6 Astra Pro",
       "cost_per_1m_in": 12.5,
       "cost_per_1m_out": 62.5,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1050000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "openai-gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "cost_per_1m_in": 0.125,
+      "cost_per_1m_out": 0.625,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1050000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "openai-gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "cost_per_1m_in": 2.5,
+      "cost_per_1m_out": 12.5,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1050000,
+      "default_max_tokens": 128000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "openai-gpt-61-sol",
+      "name": "GPT-6.1 Sol",
+      "cost_per_1m_in": 2.5,
+      "cost_per_1m_out": 12.5,
       "cost_per_1m_in_cached": 0,
       "cost_per_1m_out_cached": 0,
       "context_window": 1050000,
@@ -1148,6 +1268,24 @@
       "supports_attachments": true
     },
     {
+      "id": "grok-4-7",
+      "name": "Grok 4.7",
+      "cost_per_1m_in": 2.27,
+      "cost_per_1m_out": 6.8,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 500000,
+      "default_max_tokens": 200000,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
       "id": "grok-build-0-1",
       "name": "Grok Build 0.1",
       "cost_per_1m_in": 1,
@@ -1336,8 +1474,8 @@
     {
       "id": "mercury-2-5",
       "name": "Mercury 2.5",
-      "cost_per_1m_in": 0.05,
-      "cost_per_1m_out": 0.1875,
+      "cost_per_1m_in": 0.25,
+      "cost_per_1m_out": 0.9375,
       "cost_per_1m_in_cached": 0,
       "cost_per_1m_out_cached": 0,
       "context_window": 260000,
@@ -1360,6 +1498,24 @@
       "cost_per_1m_out_cached": 0,
       "context_window": 1000000,
       "default_max_tokens": 65536,
+      "can_reason": true,
+      "reasoning_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_reasoning_effort": "medium",
+      "supports_attachments": true
+    },
+    {
+      "id": "xiaomi-mimo-v2-6-flash",
+      "name": "MiMo-V2.6-Flash",
+      "cost_per_1m_in": 0.175,
+      "cost_per_1m_out": 0.35,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 1000000,
+      "default_max_tokens": 131072,
       "can_reason": true,
       "reasoning_levels": [
         "low",
@@ -1427,24 +1583,6 @@
       "context_window": 256000,
       "default_max_tokens": 16384,
       "can_reason": false,
-      "supports_attachments": true
-    },
-    {
-      "id": "mistral-small-2603",
-      "name": "Mistral Small 4",
-      "cost_per_1m_in": 0.1875,
-      "cost_per_1m_out": 0.75,
-      "cost_per_1m_in_cached": 0,
-      "cost_per_1m_out_cached": 0,
-      "context_window": 256000,
-      "default_max_tokens": 65536,
-      "can_reason": true,
-      "reasoning_levels": [
-        "low",
-        "medium",
-        "high"
-      ],
-      "default_reasoning_effort": "medium",
       "supports_attachments": true
     },
     {
