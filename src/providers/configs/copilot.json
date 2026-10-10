@@ -91,6 +91,18 @@
       "supports_attachments": true
     },
     {
+      "id": "claude-opus-5.5",
+      "name": "Claude Opus 5.5",
+      "cost_per_1m_in": 0,
+      "cost_per_1m_out": 0,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 328000,
+      "default_max_tokens": 128000,
+      "can_reason": false,
+      "supports_attachments": true
+    },
+    {
       "id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
       "cost_per_1m_in": 0,
@@ -331,6 +343,30 @@
       "supports_attachments": true
     },
     {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "cost_per_1m_in": 0,
+      "cost_per_1m_out": 0,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 400000,
+      "default_max_tokens": 128000,
+      "can_reason": false,
+      "supports_attachments": true
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "cost_per_1m_in": 0,
+      "cost_per_1m_out": 0,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 400000,
+      "default_max_tokens": 128000,
+      "can_reason": false,
+      "supports_attachments": true
+    },
+    {
       "id": "grok-4.5",
       "name": "Grok 4.5",
       "cost_per_1m_in": 0,
@@ -345,6 +381,18 @@
     {
       "id": "grok-4.6",
       "name": "Grok 4.6",
+      "cost_per_1m_in": 0,
+      "cost_per_1m_out": 0,
+      "cost_per_1m_in_cached": 0,
+      "cost_per_1m_out_cached": 0,
+      "context_window": 328000,
+      "default_max_tokens": 128000,
+      "can_reason": false,
+      "supports_attachments": true
+    },
+    {
+      "id": "grok-4.7",
+      "name": "Grok 4.7",
       "cost_per_1m_in": 0,
       "cost_per_1m_out": 0,
       "cost_per_1m_in_cached": 0,
